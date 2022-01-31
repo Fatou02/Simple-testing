@@ -43,7 +43,7 @@ public class WalletTest {
     }
 
     @AfterAll
-    static void afterAllTests() {
+     static void afterAllTests() {
         System.out.println("This method should run after all the tests");
     }
 
@@ -121,6 +121,7 @@ public class WalletTest {
     @Test
     public void testWalletDepositShouldBeWithPositiveAmount() {
         assertThatThrownBy(() -> emptyWallet.deposit(-5)).isInstanceOf(IllegalArgumentException.class);
+
     }
 
     @Test
